@@ -2,6 +2,7 @@
 # You can choose the number of shifts you want to apply and quit the program at the end
 
 def cipher(sentence, shift)
+  # Funtion to cipher the word given a specific shift value to change the letter
   lowercase = 'abcdefghijklmnopqrstuvwxyz'
   uppercase = lowercase.upcase
 
@@ -25,6 +26,7 @@ def cipher(sentence, shift)
 end
 
 def decipher(sentence, shift)
+  # Function to decipher the sentence, it acts in the opposite way to cipher()
   lowercase = 'abcdefghijklmnopqrstuvwxyz'
   uppercase = lowercase.upcase
 
@@ -45,6 +47,8 @@ def decipher(sentence, shift)
 
   return deciphered_word.join('')
 end
+
+# Loop to ask user 
 
 while continue
   puts "Do you want to use Caesar Ciper? Y/N"
